@@ -1,14 +1,6 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DisplayXR/.github/main/profile/DisplayXR-logo.png" width="300" alt="DisplayXR">
+  <img src="https://raw.githubusercontent.com/DisplayXR/.github/main/profile/DisplayXR-logo.png" width="160" alt="DisplayXR">
 </p>
-
-<p align="center">
-  Open-source OpenXR runtime for 3D displays.
-</p>
-
----
-
-### Repos
 
 | | |
 |---|---|
