@@ -1,6 +1,9 @@
-<p align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="middle" width="200" align="center">
   <img src="https://raw.githubusercontent.com/DisplayXR/.github/main/profile/DisplayXR-logo.png" width="160" alt="DisplayXR">
-</p>
+</td>
+<td valign="middle">
 
 | | |
 |---|---|
@@ -11,3 +14,7 @@
 | [displayxr-unreal](https://github.com/DisplayXR/displayxr-unreal) | Unreal Engine plugin |
 | [displayxr-demos](https://github.com/DisplayXR/displayxr-demos) | Demo applications |
 | [displayxr-shell](https://github.com/DisplayXR/displayxr-shell) | Spatial shell / 3D window manager |
+
+</td>
+</tr>
+</table>
