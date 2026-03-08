@@ -1,6 +1,12 @@
-## DisplayXR
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DisplayXR/.github/main/profile/DisplayXR-logo.png" width="300" alt="DisplayXR">
+</p>
 
-Open-source OpenXR runtime purpose-built for 3D displays. Native compositors for every major graphics API — no Vulkan intermediary.
+<p align="center">
+  Open-source OpenXR runtime for 3D displays.
+</p>
+
+---
 
 ### Repos
 
