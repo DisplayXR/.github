@@ -13,7 +13,7 @@
 | [displayxr-unity](https://github.com/DisplayXR/displayxr-unity) | Unity engine plugin |
 | [displayxr-unreal](https://github.com/DisplayXR/displayxr-unreal) | Unreal Engine plugin |
 | [displayxr-demos](https://github.com/DisplayXR/displayxr-demos) | Demo applications |
-| [displayxr-shell](https://github.com/DisplayXR/displayxr-shell) | Spatial shell / 3D window manager |
+| [displayxr-shell](https://github.com/DisplayXR/displayxr-shell-releases) | Spatial shell / 3D window manager |
 
 </td>
 </tr>
