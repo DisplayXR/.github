@@ -1,6 +1,8 @@
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-
+<td valign="middle" width="200" align="center">
+  <img src="https://raw.githubusercontent.com/DisplayXR/.github/main/profile/DisplayXR-logo.png" width="160" alt="DisplayXR">
+</td>
 <td valign="middle">
 
 | | |
