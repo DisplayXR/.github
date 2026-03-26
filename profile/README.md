@@ -5,8 +5,6 @@
 </td>
 <td valign="middle">
 
-| | |
-|---|---|
 | [displayxr-runtime](https://github.com/DisplayXR/displayxr-runtime) | Core OpenXR runtime, native compositors, drivers |
 | [displayxr-extensions](https://github.com/DisplayXR/displayxr-extensions) | OpenXR extension specs for 3D displays |
 | [kooima-projection](https://github.com/DisplayXR/kooima-projection) | Off-axis frustum projection math library |
