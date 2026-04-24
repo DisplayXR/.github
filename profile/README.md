@@ -13,7 +13,8 @@
 | [displayxr-unity](https://github.com/DisplayXR/displayxr-unity) | Unity engine plugin |
 | [displayxr-unity-test](https://github.com/DisplayXR/displayxr-unity-test) | Ready-to-open Unity test project for the plugin |
 | [displayxr-unreal](https://github.com/DisplayXR/displayxr-unreal) | Unreal Engine plugin |
-| [displayxr-demos](https://github.com/DisplayXR/displayxr-demos) | Demo applications |
+| [displayxr-demo-*](https://github.com/orgs/DisplayXR/repositories?q=displayxr-demo-) | One repo per demo application |
+| &nbsp;&nbsp;↳ [displayxr-demo-gaussiansplat](https://github.com/DisplayXR/displayxr-demo-gaussiansplat) | Real-time 3D Gaussian Splatting viewer |
 | [displayxr-shell](https://github.com/DisplayXR/displayxr-shell-releases) | Spatial shell / 3D window manager |
 
 </td>
