@@ -17,7 +17,7 @@
 | [displayxr-unreal](https://github.com/DisplayXR/displayxr-unreal) | Unreal Engine plugin |
 | [displayxr-demo-*](https://github.com/orgs/DisplayXR/repositories?q=displayxr-demo-) | One repo per demo application |
 | &nbsp;&nbsp;↳ [displayxr-demo-gaussiansplat](https://github.com/DisplayXR/displayxr-demo-gaussiansplat) | Real-time 3D Gaussian Splatting viewer |
-| [displayxr-shell](https://github.com/DisplayXR/displayxr-shell-releases) | Reference spatial workspace controller (built on the workspace extensions) |
+| [displayxr-shell-releases](https://github.com/DisplayXR/displayxr-shell-releases) | Reference spatial workspace controller (built on the workspace extensions) |
 
 </td>
 </tr>
