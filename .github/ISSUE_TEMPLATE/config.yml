@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Runtime contributing guide
+    url: https://github.com/DisplayXR/displayxr-runtime/blob/main/docs/guides/contributing.md
+    about: How to contribute to the OpenXR runtime, compositors, drivers, and extensions.
+  - name: Vendor integration guide
+    url: https://github.com/DisplayXR/displayxr-runtime/blob/main/docs/guides/vendor-integration.md
+    about: For display vendors integrating their hardware with DisplayXR.
+  - name: DisplayXR app manifest spec
+    url: https://github.com/DisplayXR/displayxr-runtime/blob/main/docs/specs/displayxr-app-manifest.md
+    about: How an app advertises itself to the DisplayXR Shell launcher and other workspace controllers.
+  - name: Shell user-facing bug reports
+    url: https://github.com/DisplayXR/displayxr-shell-releases/issues
+    about: For end-user bugs in the DisplayXR Shell. Internal triage moves them to the private dev repo.
