@@ -7,11 +7,13 @@
 
 **DisplayXR** is an open OpenXR runtime + extension stack for 3D displays. Build apps, build a workspace controller, or use the reference shell.
 
+End users install up to three components: **DisplayXR Runtime** (required, OpenXR runtime + service), **DisplayXR Shell** (optional, spatial workspace UX), and **DisplayXR MCP Tools** (optional, AI-agent / voice control). Each ships as a separate downloadable installer.
+
 | | |
 |---|---|
 | [displayxr-runtime](https://github.com/DisplayXR/displayxr-runtime) | Core OpenXR runtime, native compositors, drivers |
 | [displayxr-extensions](https://github.com/DisplayXR/displayxr-extensions) | OpenXR extension specs for 3D displays (incl. spatial workspace + app launcher) |
-| [displayxr-mcp](https://github.com/DisplayXR/displayxr-mcp) | Embeddable MCP server framework — exposes runtime + workspace state to AI agents |
+| [displayxr-mcp](https://github.com/DisplayXR/displayxr-mcp) | Embeddable MCP server framework + **DisplayXR MCP Tools** installer (end-user opt-in for agent / voice control) |
 | [kooima-projection](https://github.com/DisplayXR/kooima-projection) | Off-axis frustum projection math library |
 | [displayxr-unity](https://github.com/DisplayXR/displayxr-unity) | Unity engine plugin |
 | [displayxr-unity-test](https://github.com/DisplayXR/displayxr-unity-test) | Ready-to-open Unity test project for the plugin |
