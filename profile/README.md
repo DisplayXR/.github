@@ -5,7 +5,7 @@
 </td>
 <td valign="middle">
 
-**DisplayXR — OpenXR for spatial displays.** Write once, run on any spatial display. DisplayXR is an open extension standard and reference runtime that lets OpenXR applications target tracked stereo and multiview lightfield displays without vendor-specific code. Vendor-neutral by design: every display vendor integrates through the same plug-in boundary, and proven extensions are candidates for upstreaming into the official OpenXR specification.
+**DisplayXR — OpenXR for spatial displays.** Write once, run on any spatial display. DisplayXR is an open platform for spatial displays — OpenXR extension specifications, a reference runtime, and reference implementations — that lets applications target tracked stereo and multiview lightfield displays without vendor-specific code. Vendor-neutral by design: every display vendor integrates through the same plug-in boundary, and proven extensions are candidates for upstreaming into the official OpenXR specification.
 
 🌐 [displayxr.org](https://displayxr.org) · 🚀 [Get started](https://displayxr.org/getting-started) · 🏛️ [Governance](https://displayxr.org/governance) · 🔌 [Vendor plug-in guide](https://displayxr.org/vendors)
 
