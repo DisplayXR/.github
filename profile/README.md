@@ -16,7 +16,7 @@ End users install up to three components: **DisplayXR Runtime** (required, OpenX
 | [displayxr-extensions](https://github.com/DisplayXR/displayxr-extensions) | **The standard** — OpenXR extension specs for spatial displays (incl. spatial workspace + app launcher) |
 | [displayxr-runtime](https://github.com/DisplayXR/displayxr-runtime) | Reference OpenXR runtime — native compositors for every graphics API, drivers |
 | [displayxr-mcp](https://github.com/DisplayXR/displayxr-mcp) | Embeddable MCP server framework + **DisplayXR MCP Tools** installer (end-user opt-in for agent / voice control) |
-| [kooima-projection](https://github.com/DisplayXR/kooima-projection) | Off-axis frustum projection math library |
+| [displayxr-common](https://github.com/DisplayXR/displayxr-common) | Generalized off-axis frustum projection math library (`displayxr::math` + `displayxr::common`) |
 | [displayxr-unity](https://github.com/DisplayXR/displayxr-unity) | Unity engine plugin |
 | [displayxr-unity-test](https://github.com/DisplayXR/displayxr-unity-test) | Ready-to-open Unity test project for the plugin |
 | [displayxr-unreal](https://github.com/DisplayXR/displayxr-unreal) | Unreal Engine plugin |
