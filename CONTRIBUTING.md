@@ -51,5 +51,5 @@ licensed under the repo's license.
 ## Vendor integration
 
 Display vendors looking to add a new hardware target should start with
-the [vendor integration guide](https://github.com/DisplayXR/displayxr-runtime/blob/main/docs/guides/vendor-integration.md)
+the [vendor integration guide](https://github.com/DisplayXR/displayxr-runtime/blob/main/docs/guides/vendor-plugin-onboarding.md)
 in the runtime repo.
