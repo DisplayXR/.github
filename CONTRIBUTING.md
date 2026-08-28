@@ -10,7 +10,12 @@ each repo's own `CONTRIBUTING.md` (where present) has the specifics.
 | Runtime / compositor / driver / OpenXR extension bugs | [displayxr-runtime/issues](https://github.com/DisplayXR/displayxr-runtime/issues) |
 | User-facing DisplayXR Shell bugs | [displayxr-shell-releases/issues](https://github.com/DisplayXR/displayxr-shell-releases/issues) — triaged into the private dev repo by maintainers |
 | Unity plugin issues | [displayxr-unity/issues](https://github.com/DisplayXR/displayxr-unity/issues) |
+| Unity **sample project** issues | [displayxr-unity-samples/issues](https://github.com/DisplayXR/displayxr-unity-samples/issues) |
 | Unreal plugin issues | [displayxr-unreal/issues](https://github.com/DisplayXR/displayxr-unreal/issues) |
+| DisplayXR Browser (developer preview) bugs | [displayxr-browser/issues](https://github.com/DisplayXR/displayxr-browser/issues) |
+| Inline-3D web samples / `@displayxr/inline3d` SDK | [displayxr-web/issues](https://github.com/DisplayXR/displayxr-web/issues) |
+| DisplayXR Gallery bugs & content questions | [displayxr-gallery/issues](https://github.com/DisplayXR/displayxr-gallery/issues) — public feedback surface; source is private |
+| Bringing up a **new display vendor** | [displayxr-vendor-template/issues](https://github.com/DisplayXR/displayxr-vendor-template/issues) |
 | Demo-specific bugs | The relevant `displayxr-demo-*` repo |
 
 **One source of truth per issue.** Don't dual-create across repos.
@@ -52,4 +57,6 @@ licensed under the repo's license.
 
 Display vendors looking to add a new hardware target should start with
 the [vendor integration guide](https://github.com/DisplayXR/displayxr-runtime/blob/main/docs/guides/vendor-plugin-onboarding.md)
-in the runtime repo.
+in the runtime repo, then fork
+[displayxr-vendor-template](https://github.com/DisplayXR/displayxr-vendor-template) —
+a buildable, ABI-correct plug-in skeleton that needs **no vendor SDK** to compile.

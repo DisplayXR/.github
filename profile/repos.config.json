@@ -1,0 +1,152 @@
+{
+  "$comment": [
+    "Hand-maintained input for scripts/gen-profile-readme.mjs, which regenerates the",
+    "repo table in profile/README.md between the BEGIN:repos / END:repos markers.",
+    "",
+    "THIS FILE IS PUBLIC. It must name ONLY public repos. Private repos never reach",
+    "the generator (it fetches ?type=public), so there is nothing to exclude — and an",
+    "entry in `exclude` would leak a private name just as effectively as a table row.",
+    "",
+    "Every public, non-archived repo in the org must appear in exactly one of",
+    "`sections[].repos` or `exclude`, or the generator exits non-zero. That hard",
+    "failure is the point: a new repo turns the daily workflow red until someone",
+    "classifies it, so it can never silently go missing from github.com/DisplayXR.",
+    "",
+    "Per-repo fields: `repo` (required), `description` (optional override; omit to",
+    "use the live GitHub repo description), `indent` (optional, renders as a nested",
+    "sub-row under the entry above it)."
+  ],
+
+  "sections": [
+    {
+      "title": "The standard",
+      "repos": [
+        {
+          "repo": "displayxr-extensions",
+          "description": "OpenXR extension specs + headers for spatial displays"
+        }
+      ]
+    },
+    {
+      "title": "Runtime & platform",
+      "repos": [
+        {
+          "repo": "displayxr-runtime",
+          "description": "Reference OpenXR runtime — native compositors for D3D11, D3D12, Vulkan, Metal, OpenGL · Windows · macOS · Android · Linux (Preview)"
+        },
+        {
+          "repo": "displayxr-installer",
+          "description": "One-click meta-installer — runtime + Shell + plug-in + MCP Tools + demos, version-pinned"
+        },
+        {
+          "repo": "displayxr-shell-releases",
+          "description": "Reference spatial workspace controller — 3D window manager (installers + bug reports)"
+        },
+        {
+          "repo": "displayxr-mcp",
+          "description": "Embeddable MCP server framework + DisplayXR MCP Tools installer (AI-agent / voice control)"
+        },
+        {
+          "repo": "displayxr-common",
+          "description": "Off-axis (Kooima) projection + atlas-tiling math shared by runtime, plug-ins, and demos"
+        }
+      ]
+    },
+    {
+      "title": "Vendor integration",
+      "repos": [
+        {
+          "repo": "displayxr-vendor-template",
+          "description": "Zero-SDK starter kit for a display-processor plug-in — fork it to bring up new hardware"
+        },
+        {
+          "repo": "displayxr-leia-plugin",
+          "description": "Leia SR plug-in — the first vendor integration, and the worked reference"
+        }
+      ]
+    },
+    {
+      "title": "Engine plug-ins",
+      "repos": [
+        {
+          "repo": "displayxr-unity",
+          "description": "Unity plugin (UPM package `com.displayxr.unity`)"
+        },
+        {
+          "repo": "displayxr-unity-samples",
+          "description": "Ready-to-open Unity samples — BiRP / URP / HDRP + Desktop Avatar"
+        },
+        {
+          "repo": "displayxr-unreal",
+          "description": "Unreal Engine 5.7 plugin"
+        },
+        {
+          "repo": "displayxr-unreal-test",
+          "description": "Unreal test project for the plugin",
+          "indent": true
+        }
+      ]
+    },
+    {
+      "title": "Web",
+      "repos": [
+        {
+          "repo": "displayxr-browser",
+          "description": "Developer-preview Chromium — renders the web normally, weaves glasses-free inline 3D · Windows · Android"
+        },
+        {
+          "repo": "displayxr-cef-host",
+          "description": "Smallest worked example of driving the weave from your own present-owner (not a browser to use)",
+          "indent": true
+        },
+        {
+          "repo": "displayxr-web",
+          "description": "Inline-3D web samples + the `@displayxr/inline3d` JS SDK · live at [displayxr.github.io/displayxr-web](https://displayxr.github.io/displayxr-web/)"
+        },
+        {
+          "repo": "displayxr-gallery",
+          "description": "DisplayXR Gallery — social wall of 3D photography; feedback & bug reports"
+        }
+      ]
+    },
+    {
+      "title": "Demos",
+      "repos": [
+        {
+          "repo": "displayxr-demo-gaussiansplat",
+          "description": "Real-time 3D Gaussian Splatting viewer (`.spz` / `.ply`)"
+        },
+        {
+          "repo": "displayxr-demo-modelviewer",
+          "description": "glTF 2.0 PBR model viewer — drag and drop a `.glb`"
+        },
+        {
+          "repo": "displayxr-demo-mediaplayer",
+          "description": "Stereo photo + GPU-decoded video player with folder slideshows"
+        },
+        {
+          "repo": "displayxr-demo-avatar",
+          "description": "Transparent, click-through 3D avatar floating over the desktop"
+        },
+        {
+          "repo": "displayxr-demo-earthview",
+          "description": "Streaming 3D city viewer on Google Photorealistic 3D Tiles"
+        }
+      ]
+    },
+    {
+      "title": "Project",
+      "repos": [
+        {
+          "repo": "displayxr-website",
+          "description": "Source of [displayxr.org](https://displayxr.org)"
+        }
+      ]
+    }
+  ],
+
+  "exclude": {
+    ".github": "This repo — it hosts the profile page itself.",
+    "glTF-Sample-Assets": "Vendored fork of the Khronos sample-asset repo, not a DisplayXR component."
+  }
+}

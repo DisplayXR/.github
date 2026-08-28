@@ -1,0 +1,65 @@
+# Keeps the repo table on github.com/DisplayXR in sync with the live org.
+#
+# The table rotted for two months because it was hand-written and nothing watched
+# it. The generator this runs FAILS THE JOB when a public repo is unclassified or
+# a listed repo goes away — so a red run here is the alarm, not a nuisance. Never
+# add continue-on-error or `|| true` to this file.
+name: sync-profile
+
+on:
+  schedule:
+    - cron: "23 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "profile/repos.config.json"
+      - "profile/README.md"
+      - "scripts/gen-profile-readme.mjs"
+      - ".github/workflows/sync-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-profile
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate profile/README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/gen-profile-readme.mjs
+
+      - name: Commit if the table changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- profile/README.md; then
+            echo "No change — profile/README.md already matches the live org."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/README.md
+          git commit -m "chore(profile): sync repo table with the live org"
+          git push
+
+          # Assert the write actually landed. A sync job that reports success
+          # while changing nothing is the exact failure this workflow exists to
+          # prevent, so prove it rather than trusting the exit code above.
+          if ! git diff --quiet HEAD~1 HEAD -- profile/README.md; then
+            echo "Committed and pushed an updated profile/README.md."
+          else
+            echo "::error::Commit landed but profile/README.md is unchanged in it."
+            exit 1
+          fi
