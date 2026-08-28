@@ -16,7 +16,6 @@
     "use the live GitHub repo description), `indent` (optional, renders as a nested",
     "sub-row under the entry above it)."
   ],
-
   "sections": [
     {
       "title": "The standard",
@@ -102,10 +101,6 @@
         {
           "repo": "displayxr-web",
           "description": "Inline-3D web samples + the `@displayxr/inline3d` JS SDK · live at [displayxr.github.io/displayxr-web](https://displayxr.github.io/displayxr-web/)"
-        },
-        {
-          "repo": "displayxr-gallery",
-          "description": "DisplayXR Gallery — social wall of 3D photography; feedback & bug reports"
         }
       ]
     },
@@ -144,7 +139,6 @@
       ]
     }
   ],
-
   "exclude": {
     ".github": "This repo — it hosts the profile page itself.",
     "glTF-Sample-Assets": "Vendored fork of the Khronos sample-asset repo, not a DisplayXR component."

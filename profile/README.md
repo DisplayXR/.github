@@ -42,7 +42,6 @@ The runtime ships on **Windows**, **macOS**, and **Android**, with **Linux** in 
 | [displayxr-browser](https://github.com/DisplayXR/displayxr-browser) | Developer-preview Chromium — renders the web normally, weaves glasses-free inline 3D · Windows · Android |
 | &nbsp;&nbsp;↳ [displayxr-cef-host](https://github.com/DisplayXR/displayxr-cef-host) | Smallest worked example of driving the weave from your own present-owner (not a browser to use) |
 | [displayxr-web](https://github.com/DisplayXR/displayxr-web) | Inline-3D web samples + the `@displayxr/inline3d` JS SDK · live at [displayxr.github.io/displayxr-web](https://displayxr.github.io/displayxr-web/) |
-| [displayxr-gallery](https://github.com/DisplayXR/displayxr-gallery) | DisplayXR Gallery — social wall of 3D photography; feedback & bug reports |
 | **Demos** | |
 | [displayxr-demo-gaussiansplat](https://github.com/DisplayXR/displayxr-demo-gaussiansplat) | Real-time 3D Gaussian Splatting viewer (`.spz` / `.ply`) |
 | [displayxr-demo-modelviewer](https://github.com/DisplayXR/displayxr-demo-modelviewer) | glTF 2.0 PBR model viewer — drag and drop a `.glb` |

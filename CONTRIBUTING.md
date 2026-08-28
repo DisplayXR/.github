@@ -14,7 +14,6 @@ each repo's own `CONTRIBUTING.md` (where present) has the specifics.
 | Unreal plugin issues | [displayxr-unreal/issues](https://github.com/DisplayXR/displayxr-unreal/issues) |
 | DisplayXR Browser (developer preview) bugs | [displayxr-browser/issues](https://github.com/DisplayXR/displayxr-browser/issues) |
 | Inline-3D web samples / `@displayxr/inline3d` SDK | [displayxr-web/issues](https://github.com/DisplayXR/displayxr-web/issues) |
-| DisplayXR Gallery bugs & content questions | [displayxr-gallery/issues](https://github.com/DisplayXR/displayxr-gallery/issues) — public feedback surface; source is private |
 | Bringing up a **new display vendor** | [displayxr-vendor-template/issues](https://github.com/DisplayXR/displayxr-vendor-template/issues) |
 | Demo-specific bugs | The relevant `displayxr-demo-*` repo |
 
