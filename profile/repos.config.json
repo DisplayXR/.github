@@ -101,6 +101,11 @@
         {
           "repo": "displayxr-web",
           "description": "Inline-3D web samples + the `@displayxr/inline3d` JS SDK · live at [displayxr.github.io/displayxr-web](https://displayxr.github.io/displayxr-web/)"
+        },
+        {
+          "repo": "displayxr-models",
+          "description": "Content-addressed ONNX depth + inpainting models behind the browser's Convert-to-3D (permissive licences only)",
+          "indent": true
         }
       ]
     },
