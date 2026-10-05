@@ -8,13 +8,15 @@
 </td>
 <td valign="middle">
 
-**DisplayXR — OpenXR for spatial displays.** Write once, run on any spatial display. DisplayXR is an open platform for spatial displays — OpenXR extension specifications, a reference runtime, and reference implementations — that lets applications target tracked stereo and multiview lightfield displays without vendor-specific code. Vendor-neutral by design: every display vendor integrates through the same plug-in boundary, and proven extensions are candidates for upstreaming into the official OpenXR specification.
+**DisplayXR — OpenXR for Spatial Displays.** Write once, run on any spatial display: screens that show content in real depth, in front of and behind the glass, with or without glasses. DisplayXR builds on OpenXR rather than replacing it: an open-source OpenXR runtime that runs the official Khronos conformance suite, plus the `XR_DXR_*` extensions spatial displays need (where the display is, rendering into your own window, 2D and 3D in one window, see-through over the desktop). Display makers plug in underneath; apps never see the difference.
 
-The runtime ships on **Windows**, **macOS**, and **Android**, with **Linux** in preview (Vulkan-only, `.deb`), and gives every graphics API its own native compositor — D3D11, D3D12, Vulkan, Metal, OpenGL.
+**The [DisplayXR Browser](https://displayxr.org/browser)** brings the same thing to the web. 3D models, movies, photos and video calls show in depth right inside the page, with no "Enter VR", using a few lines of JavaScript ([`@displayxr/inline3d`](https://www.npmjs.com/package/@displayxr/inline3d)). Every other browser shows the same page in 2D.
 
-🌐 [displayxr.org](https://displayxr.org) · 🚀 [Get started](https://displayxr.org/getting-started) · 🏛️ [Governance](https://displayxr.org/governance) · 🔌 [Vendor plug-in guide](https://displayxr.org/vendors)
+The runtime ships on **Windows**, **macOS**, **Linux** and **Android**, with a native compositor for each graphics API (D3D11, D3D12, Vulkan, Metal, OpenGL). The browser ships on Windows, Android and Linux; macOS is coming soon.
 
-**Install:** the one-click [bundle installer](https://github.com/DisplayXR/displayxr-installer/releases/latest) sets up everything at pinned, mutually-compatible versions. Or install the pieces individually: **DisplayXR Runtime** (required), a **display-processor plug-in** for your hardware, **DisplayXR Shell** (optional, spatial workspace UX), and **DisplayXR MCP Tools** (optional, AI-agent / voice control). The **DisplayXR Browser** developer preview ships on its own cadence.
+🌐 [displayxr.org](https://displayxr.org) · ⬇️ [Download](https://displayxr.org/download) · 🌍 [Browser](https://displayxr.org/browser) · 🛠️ [Developers](https://displayxr.org/developers) · 🔌 [Display vendors](https://displayxr.org/vendors) · 🤝 [Contribute](https://displayxr.org/contribute) · 💬 [Discussions](https://github.com/DisplayXR/displayxr-runtime/discussions)
+
+**Install:** the one-click [bundle](https://github.com/DisplayXR/displayxr-installer/releases/latest) installs the runtime and your display's plug-in at matched versions, plus the optional DisplayXR Shell (a spatial workspace) and MCP Tools (AI-agent control). Then add the [DisplayXR Browser](https://github.com/DisplayXR/displayxr-browser/releases/latest) for 3D on the web. No spatial display yet? The runtime's simulated display runs everything in an ordinary window.
 
 </td>
 </tr>
@@ -28,7 +30,7 @@ The runtime ships on **Windows**, **macOS**, and **Android**, with **Linux** in 
 | **The standard** | |
 | [displayxr-extensions](https://github.com/DisplayXR/displayxr-extensions) | OpenXR extension specs + headers for spatial displays |
 | **Runtime & platform** | |
-| [displayxr-runtime](https://github.com/DisplayXR/displayxr-runtime) | Reference OpenXR runtime — native compositors for D3D11, D3D12, Vulkan, Metal, OpenGL · Windows · macOS · Android · Linux (Preview) |
+| [displayxr-runtime](https://github.com/DisplayXR/displayxr-runtime) | Reference OpenXR runtime — native compositors for D3D11, D3D12, Vulkan, Metal, OpenGL · Windows · macOS · Android · Linux |
 | [displayxr-installer](https://github.com/DisplayXR/displayxr-installer) | One-click meta-installer — runtime + Shell + plug-in + MCP Tools + demos, version-pinned |
 | [displayxr-shell-releases](https://github.com/DisplayXR/displayxr-shell-releases) | Reference spatial workspace controller — 3D window manager (installers + bug reports) |
 | [displayxr-mcp](https://github.com/DisplayXR/displayxr-mcp) | Embeddable MCP server framework + DisplayXR MCP Tools installer (AI-agent / voice control) |
@@ -42,7 +44,7 @@ The runtime ships on **Windows**, **macOS**, and **Android**, with **Linux** in 
 | [displayxr-unreal](https://github.com/DisplayXR/displayxr-unreal) | Unreal Engine 5.7 plugin |
 | &nbsp;&nbsp;↳ [displayxr-unreal-test](https://github.com/DisplayXR/displayxr-unreal-test) | Unreal test project for the plugin |
 | **Web** | |
-| [displayxr-browser](https://github.com/DisplayXR/displayxr-browser) | Developer-preview Chromium — renders the web normally, weaves glasses-free inline 3D · Windows · Android |
+| [displayxr-browser](https://github.com/DisplayXR/displayxr-browser) | The DisplayXR Browser — Chromium that shows 3D models, movies, photos and video calls in depth inside the page · Windows · Android · Linux (macOS soon) |
 | &nbsp;&nbsp;↳ [displayxr-cef-host](https://github.com/DisplayXR/displayxr-cef-host) | Smallest worked example of driving the weave from your own present-owner (not a browser to use) |
 | [displayxr-web](https://github.com/DisplayXR/displayxr-web) | Inline-3D web samples + the `@displayxr/inline3d` JS SDK · live at [displayxr.github.io/displayxr-web](https://displayxr.github.io/displayxr-web/) |
 | &nbsp;&nbsp;↳ [displayxr-models](https://github.com/DisplayXR/displayxr-models) | Content-addressed ONNX depth + inpainting models behind the browser's Convert-to-3D (permissive licences only) |
@@ -52,6 +54,7 @@ The runtime ships on **Windows**, **macOS**, and **Android**, with **Linux** in 
 | [displayxr-demo-mediaplayer](https://github.com/DisplayXR/displayxr-demo-mediaplayer) | Stereo photo + GPU-decoded video player with folder slideshows |
 | [displayxr-demo-avatar](https://github.com/DisplayXR/displayxr-demo-avatar) | Transparent, click-through 3D avatar floating over the desktop |
 | [displayxr-demo-earthview](https://github.com/DisplayXR/displayxr-demo-earthview) | Streaming 3D city viewer on Google Photorealistic 3D Tiles |
+| [displayxr-reference-scenes](https://github.com/DisplayXR/displayxr-reference-scenes) | Reference scenes for showing and validating open-standard 3D content (OpenUSD, MaterialX/OpenPBR, glTF) on spatial displays |
 | **Project** | |
 | [displayxr-website](https://github.com/DisplayXR/displayxr-website) | Source of [displayxr.org](https://displayxr.org) |
 <!-- END:repos -->

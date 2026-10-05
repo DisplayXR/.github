@@ -31,7 +31,7 @@
       "repos": [
         {
           "repo": "displayxr-runtime",
-          "description": "Reference OpenXR runtime — native compositors for D3D11, D3D12, Vulkan, Metal, OpenGL · Windows · macOS · Android · Linux (Preview)"
+          "description": "Reference OpenXR runtime — native compositors for D3D11, D3D12, Vulkan, Metal, OpenGL · Windows · macOS · Android · Linux"
         },
         {
           "repo": "displayxr-installer",
@@ -91,7 +91,7 @@
       "repos": [
         {
           "repo": "displayxr-browser",
-          "description": "Developer-preview Chromium — renders the web normally, weaves glasses-free inline 3D · Windows · Android"
+          "description": "The DisplayXR Browser — Chromium that shows 3D models, movies, photos and video calls in depth inside the page · Windows · Android · Linux (macOS soon)"
         },
         {
           "repo": "displayxr-cef-host",
@@ -131,6 +131,10 @@
         {
           "repo": "displayxr-demo-earthview",
           "description": "Streaming 3D city viewer on Google Photorealistic 3D Tiles"
+        },
+        {
+          "repo": "displayxr-reference-scenes",
+          "description": "Reference scenes for showing and validating open-standard 3D content (OpenUSD, MaterialX/OpenPBR, glTF) on spatial displays"
         }
       ]
     },
